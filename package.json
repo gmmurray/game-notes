@@ -1,0 +1,49 @@
+{
+  "name": "game-notes",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "dev-sb": "supabase start && next dev",
+    "pull-db": "supabase db pull && supabase migration up",
+    "start-sb": "supabase start",
+    "stop-sb": "supabase stop",
+    "push-db": "supabase db push",
+    "link-sb": "supabase link --project-ref"
+  },
+  "dependencies": {
+    "@mantine/core": "^7.4.2",
+    "@mantine/form": "^7.4.2",
+    "@mantine/hooks": "^7.4.2",
+    "@mantine/notifications": "^7.4.2",
+    "@supabase/auth-helpers-nextjs": "^0.8.7",
+    "@supabase/ssr": "^0.0.10",
+    "@supabase/supabase-js": "^2.39.3",
+    "@tabler/icons-react": "^2.46.0",
+    "dayjs": "^1.11.10",
+    "mantine-form-zod-resolver": "^1.1.0",
+    "next": "^14.1.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "sass": "^1.70.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8.4.33",
+    "postcss-preset-mantine": "^1.12.3",
+    "postcss-simple-vars": "^7.0.1",
+    "supabase": "^1.162.4",
+    "typescript": "^5"
+  },
+  "resolutions": {
+    "string-width": "4.2.3"
+  }
+}
